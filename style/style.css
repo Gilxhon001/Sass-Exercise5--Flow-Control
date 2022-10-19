@@ -1,0 +1,149 @@
+.container, .container-subtitle {
+  border: 0.0625rem solid #cc0000;
+  padding: 0.3125rem;
+}
+.container .container-subtitle, .container-subtitle .container-subtitle, .container .container-title, .container-subtitle .container-title {
+  color: green;
+  text-align: center;
+  width: fit-content;
+  margin: 2rem auto 0;
+}
+.container-title {
+  text-decoration: underline solid blue 0.0625rem;
+  text-underline-offset: 0.5rem;
+}
+.container-subtitle {
+  padding: 1rem;
+}
+.container .article, .container .fs, .container-subtitle .article, .container-subtitle .fs {
+  display: flex;
+  flex-direction: row;
+  margin: 0.9375rem;
+}
+.container .article-card, .container-subtitle .article-card {
+  color: green;
+  border: 0.0625rem solid blue;
+  font-size: 1.5625rem;
+  text-align: center;
+  padding: 1.25rem;
+  width: 100%;
+}
+.container .article-card_blue, .container-subtitle .article-card_blue {
+  color: #3333ff;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1.25rem;
+  width: 100%;
+}
+.container .article-card_red, .container-subtitle .article-card_red {
+  color: #ff3333;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1.25rem;
+  width: 100%;
+}
+.container .fs, .container-subtitle .fs {
+  justify-content: space-between;
+}
+.container .fs div:nth-child(1), .container-subtitle .fs div:nth-child(1) {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+.container .fs div:nth-child(2), .container-subtitle .fs div:nth-child(2) {
+  background-color: #e6e6e6;
+  color: #191919;
+}
+.container .fs div:nth-child(3), .container-subtitle .fs div:nth-child(3) {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+.container .fs div:nth-child(4), .container-subtitle .fs div:nth-child(4) {
+  background-color: #cccccc;
+  color: #333333;
+}
+.container .fs div:nth-child(5), .container-subtitle .fs div:nth-child(5) {
+  background-color: #bfbfbf;
+  color: #404040;
+}
+.container .fs div:nth-child(6), .container-subtitle .fs div:nth-child(6) {
+  background-color: #b3b3b3;
+  color: #4c4c4c;
+}
+.container .fs div:nth-child(7), .container-subtitle .fs div:nth-child(7) {
+  background-color: #a6a6a6;
+  color: #595959;
+}
+.container .fs div:nth-child(8), .container-subtitle .fs div:nth-child(8) {
+  background-color: #999999;
+  color: #666666;
+}
+.container .fs div:nth-child(9), .container-subtitle .fs div:nth-child(9) {
+  background-color: #8c8c8c;
+  color: #737373;
+}
+.container .fs div:nth-child(10), .container-subtitle .fs div:nth-child(10) {
+  background-color: gray;
+  color: #7f7f7f;
+}
+.container .fs div:nth-child(10), .container-subtitle .fs div:nth-child(10) {
+  background-color: blue;
+  color: red;
+}
+.container .fs div:nth-child(11), .container-subtitle .fs div:nth-child(11) {
+  background-color: #737373;
+  color: #8c8c8c;
+}
+.container .fs div:nth-child(12), .container-subtitle .fs div:nth-child(12) {
+  background-color: #666666;
+  color: #999999;
+}
+.container .fs div:nth-child(13), .container-subtitle .fs div:nth-child(13) {
+  background-color: #595959;
+  color: #a6a6a6;
+}
+.container .fs div:nth-child(14), .container-subtitle .fs div:nth-child(14) {
+  background-color: #4d4d4d;
+  color: #b2b2b2;
+}
+.container .fs div:nth-child(15), .container-subtitle .fs div:nth-child(15) {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+.container .fs div:nth-child(16), .container-subtitle .fs div:nth-child(16) {
+  background-color: #333333;
+  color: #cccccc;
+}
+.container .fs div:nth-child(17), .container-subtitle .fs div:nth-child(17) {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+.container .fs div:nth-child(18), .container-subtitle .fs div:nth-child(18) {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}
+.container .fs div:nth-child(19), .container-subtitle .fs div:nth-child(19) {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+.container .fs .fs-1rem, .container-subtitle .fs .fs-1rem {
+  font-size: 1rem;
+  height: 2.8125rem;
+  width: 2.8125rem;
+  border: 0.0625rem solid #cc0000;
+}
+.container .fs .fs-2rem, .container-subtitle .fs .fs-2rem {
+  font-size: 2rem;
+  height: 2.8125rem;
+  width: 2.8125rem;
+  border: 0.0625rem solid #cc0000;
+}
+.container .fs .fs-3rem, .container-subtitle .fs .fs-3rem {
+  font-size: 3rem;
+  height: 2.8125rem;
+  width: 2.8125rem;
+  border: 0.0625rem solid #cc0000;
+}
+
+/*# sourceMappingURL=style.css.map */

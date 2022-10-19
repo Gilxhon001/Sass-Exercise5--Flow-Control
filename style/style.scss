@@ -1,0 +1,96 @@
+@use "sass:color";
+
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+@function rem($size) {
+    $remValue: calc($size / 16)+rem;
+    @return $remValue;
+}
+
+@mixin article-card($color: $color-tertiary, $border-color: $color-secondary, $font-size: rem(25)) {
+    color: $color;
+    border: rem(1) solid $border-color;
+    font-size: $font-size;
+    text-align: center;
+    padding: rem(20);
+    width: 100%;
+}
+
+.container {
+    border: rem(1) solid color.adjust($color-primary, $lightness: -10%);
+    padding: rem(5);
+
+    %title-content {
+        color: $color-tertiary;
+        text-align: center;
+        width: fit-content;
+        margin: 2rem auto 0;
+    }
+
+    &-title {
+        @extend %title-content;
+        text-decoration: underline solid $color-secondary rem(1);
+        text-underline-offset: rem(8);
+    }
+
+    &-subtitle {
+        padding: 1rem;
+        @extend .container;
+        @extend %title-content;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: row;
+        margin: rem(15);
+
+        &-card {
+            @include article-card();
+
+            &_blue {
+                @include article-card(color.adjust($color-secondary, $lightness: 10%), $color-tertiary, rem(16));
+            }
+
+            &_red {
+                @include article-card(color.adjust($color-primary, $lightness: 10%), $color-tertiary, rem(16));
+            }
+        }
+    }
+
+    .fs {
+        @extend .article;
+        justify-content: space-between;
+
+        @for $var from 1 to 20 {
+
+            $amount: 5%;
+
+            div:nth-child(#{$var}) {
+                $background: color.adjust(white, $lightness: - $var * $amount);
+                background-color: $background;
+                color: color.invert($background);
+            }
+
+            @if $var ==10 {
+                div:nth-child(#{$var}) {
+                    background-color: $color-secondary;
+                    color: $color-primary;
+                }
+            }
+        }
+
+
+        $sizes: 1rem, 2rem, 3rem;
+
+        @each $size in $sizes {
+            .fs-#{$size} {
+                font-size: $size;
+                height: rem(45);
+                width: rem(45);
+                border: rem(1) solid color.adjust($color-primary, $lightness: -10%);
+            }
+        }
+    }
+}
